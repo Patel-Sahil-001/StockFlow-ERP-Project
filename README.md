@@ -1,2 +1,3 @@
-# StockFlow-ERP-Project
-6th semester project
+# StockFlow
+
+6th Sem Project
