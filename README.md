@@ -2,6 +2,11 @@
 
 A comprehensive Enterprise Resource Planning (ERP) system for inventory and sales management, built with modern web technologies. Designed as a 6th semester university project.
 
+📌 Project Status
+✅ Completed  
+This project was successfully completed as part of a 6th semester university curriculum.  
+All core features have been implemented and tested. Future improvements may include performance optimizations and UI enhancements.
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
