@@ -1,64 +1,45 @@
 # StockFlow ERP
 
-A full-stack ERP system for inventory and sales management.
+## About
+StockFlow ERP is a system designed to help businesses manage their inventory and sales efficiently. It allows users to track products, generate bills, and view sales analytics.
 
-## 🛠 Tech Stack
+## Key Features
+- **Inventory Tracking**: Monitor stock levels in real-time.
+- **Sales Management**: Create bills and track sales history.
+- **User Roles**: Secure login for admins and staff.
+- **Reports**: View simple graphs for sales and inventory.
 
-- **Frontend**: React, Vite, Tailwind CSS, Redux
-- **Backend**: Node.js, Express.js, MongoDB
-- **Auth**: Passport.js (Google OAuth), JWT
-- **Tools**: Cloudinary (Image Upload), Nodemailer (Email), Vercel (Deployment)
+## Tech Stack
+- **Frontend**: React, Tailwind CSS
+- **Backend**: Node.js, Express, MongoDB
+- **Authentication**: Google OAuth & JWT
 
-## 🚀 Getting Started
+## How to Run
 
-### Prerequisites
+### 1. Backend (Server)
+The backend handles the database and API.
 
-- Node.js (v18+)
-- MongoDB URI
-- Cloudinary & Google OAuth credentials
+```bash
+cd backend
+npm install
+npm run dev
+```
+*Note: Ensure you have a `.env` file with your credentials (PORT, MONGO_URI, etc).*
 
-### Installation
+### 2. Frontend (UI)
+The frontend allows you to interact with the system.
 
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/yourusername/StockFlow-ERP-Project.git
-    cd StockFlow-ERP-Project
-    ```
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-2.  **Backend Setup**
-    ```bash
-    cd backend
-    npm install
-    
-    # Create .env file with:
-    # PORT=5000
-    # MONGO_URI=your_mongo_uri
-    # JWT_SECRET=your_secret
-    # CLOUDINARY_*, EMAIL_*, GOOGLE_* credentials
-    
-    npm run dev
-    ```
+## API Highlights
+*   **POST** `/api/users/login` - Log in to the app
+*   **GET** `/api/products` - View all products
+*   **POST** `/api/sales` - Create a new sale
+*   **GET** `/api/reports` - Get dashboard data
 
-3.  **Frontend Setup**
-    ```bash
-    cd frontend
-    npm install
-    
-    # Create .env file with:
-    # VITE_API_URL=http://localhost:5000/api
-    
-    npm run dev
-    ```
-
-## 📚 API Overview
-
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| **Auth** | `/api/users/login` | User login |
-| **Products** | `/api/products` | Manage inventory |
-| **Sales** | `/api/sales` | Create & view orders |
-| **Reports** | `/api/reports/sales` | Analytics data |
-
-## 📄 License
-
-This project is for educational purposes.
+## License
+Educational Project.
